@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>Karate.request.UserAndAuthentication.Login.login</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2022-09-29 02:50:42 AM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:8]">[1:8] Add a new user Using Post Method </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">Karate/request/UserAndAuthentication/Login/login.feature</span><span class="feature-description">Service Post | As QA automation&#13;
+  I want to login an existing user</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:8]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:8]</span><span class="scenario-name">Add a new user Using Post Method </span>
+</div>
+<div class="scenario-time passed">ms: 2593</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:8]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">* def requestBody = read('Karate/request/UserAndAuthentication/Register/requestBody.json')</div>
+</div>
+<div class="time-cell passed">20</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">* def responsePost = read('Karate/request/UserAndAuthentication/Register/responsePost.json')</div>
+</div>
+<div class="time-cell passed">18</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">Given path 'users','login'</div>
+</div>
+<div class="time-cell passed">12</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">And request requestBody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">2544</div>
+</div>
+<div class="preformatted" data-parent="6">02:50:41.058 request:
+1 &gt; POST https://angular-conduit-node.herokuapp.com/api/users/login
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 90
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: angular-conduit-node.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+{"user":{"username":"williamcab","email":"williamcab018@gmail.com","password":"apple123"}}
+
+02:50:42.120 response time in milliseconds: 1046.00
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 282
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 29 Sep 2022 07:50:41 GMT
+1 &lt; Etag: W/"11a-6BFPYwLamf1oU1Q8ArseNw"
+1 &lt; Server: Cowboy
+1 &lt; Vary: X-HTTP-Method-Override
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"user":{"username":"williamcab","email":"williamcab018@gmail.com","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzQ3OGQ5NDQzNjZjMDAxN2Q2N2NiMSIsInVzZXJuYW1lIjoid2lsbGlhbWNhYiIsImV4cCI6MTY2OTYyMTg0MSwiaWF0IjoxNjY0NDM3ODQxfQ.P1TZyLSWXStEUaJjt_rKhOTPpc75yGlY_E0byx4Cj_8"}}</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>
