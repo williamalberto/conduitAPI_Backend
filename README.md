@@ -14,7 +14,7 @@ entre su comunidad de usuarios: <br/>
 ***
 ## Herramientas 
 * Java, JDK version 1.8.0.33
-* Maven, version 3.8.6 (As environment variable)
+* Maven, version 3.8.6
 * JUnit5
 * Karate framework
 * Cucumber framework
